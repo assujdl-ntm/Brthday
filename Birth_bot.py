@@ -5,7 +5,7 @@ from datetime import datetime
 import json
 
 TOKEN = os.getenv("DISCORD_TOKEN")
-CHANNEL_ID = 1459518772330106931
+CHANNEL_ID = 1459718178807611486
 
 with open("birthdays.json", "r", encoding="utf-8") as f:
     birthdays = json.load(f)
@@ -27,3 +27,4 @@ async def on_ready():
     check_birthdays.start()
 
 client.run(TOKEN)
+
